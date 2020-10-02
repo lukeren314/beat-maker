@@ -1,5 +1,7 @@
 # beat-maker
 
+Welcome to the Remote Repository for Beat Maker. This contains all the technical information necessary for engineers to do their job right. The engineers working on this project are Luke Ren, Dylan Tran, Chris Shokunbi, and Erick Ho.
+
 # Code Style Standard
 ## HTML/CSS
 
