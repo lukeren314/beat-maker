@@ -1,7 +1,7 @@
 # beat-maker
 
 # Code Style Standard
-# HTML/CSS
+## HTML/CSS
 
 HTML/CSS code is pretty standard, I don't care too much about styling.
 
