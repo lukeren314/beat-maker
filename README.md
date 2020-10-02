@@ -122,9 +122,25 @@ Feel free to use Github Desktop or any other git GUI to help visualize/track thi
 Steps to getting your code from your local repository to the public remote repository:
 0. Try to pull changes from the remote repository first, if you can't, then proceed.
 1. Add/Stage your changes
-2. Commit your changes with a relevant message (and a code review ticket)
+2. Commit your changes with a relevant message
+
+Your commit message should be the name of the Trello task in square brackets and then any extra information involved with completing the task, like this:
+```
+[Implement Map Generation] used the cool guy algorithm in the gameLogic file
+```
 3. Pull changes from the remote repository. If you end up with a merge conflict, deal with the merge conflict, and then re-stage/re-commit your changes.
 4. Push your changes, and you're done!
 
 
 # Code Reviews
+After you are done pushing your changes, find the github pages for the commits involved with the task, and pick someone you want to review your code for you. Once you have done these things, mention someone in the code-reviews channel on discord and follow the mention with the name of the task involved and links to the commits, like this:
+
+```
+@DiscordUser Fix Map Generation
+https://github.com/commit1
+https://github.com/commit2
+```
+
+Reviewers should look for things like adhering to the style guide, obvious edge cases that were not accounted for, and general coding malpractice. Reviewers should NOT input how they would have implemented the algorithm/feature, unless there is obvious reasons to believe that the current implementation is severely flawed or does not perform its intended purpose.
+
+Feel free to ask questions in the Discord, code reviews can be confusing.
