@@ -1,0 +1,19 @@
+{
+  "name": "beat-maker",
+  "version": "1.0.0",
+  "description": "make beats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeren314/beat-maker.git"
+  },
+  "author": "Luke Ren, Chris Shokunbi, Dylan Tran, Erick Ho, Paul Yu, Kenny Tsing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeren314/beat-maker/issues"
+  },
+  "homepage": "https://github.com/lukeren314/beat-maker#readme"
+}
