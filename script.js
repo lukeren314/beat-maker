@@ -7,6 +7,8 @@
 let ticker = new Ticker();
 let mainCanvas;
 let canvasContext;
+let instruments;
+
 
 function setup(){
     mainCanvas = document.getElementById("main-canvas");
@@ -14,6 +16,8 @@ function setup(){
     canvasContext.beginPath();
     canvasContext.rect(20,20,150,100);
     canvasContext.stroke();
+
+    instruments = new Instruments();
 }
 
 function update(progress) {
@@ -27,3 +31,16 @@ function draw() {
     ticker.draw();
 }
   
+function debug_PlayRiff(){
+    
+    // remove for later
+
+    setTimeout(()=>{instruments.playInstrument('kick')}, 0);
+    setTimeout(()=>{instruments.playInstrument('hihat')}, 200);
+    setTimeout(()=>{instruments.playInstrument('snare')}, 400);
+    setTimeout(()=>{instruments.playInstrument('hihat')}, 600);
+    setTimeout(()=>{instruments.playInstrument('kick')}, 800);
+    setTimeout(()=>{instruments.playInstrument('hihat')}, 1000);
+    setTimeout(()=>{instruments.playInstrument('snare')}, 1200);
+    setTimeout(()=>{instruments.playInstrument('hihat')}, 1400);
+}

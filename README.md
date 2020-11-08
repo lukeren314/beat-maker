@@ -92,7 +92,7 @@ function sumArrayNumbers(numArray) {
 */
 class Animal {
   constructor(width, height) {
-    // always use this.
+    // always use this when referring to a member variable/method
     this.width = width;
     this.height = height;
 
@@ -102,6 +102,14 @@ class Animal {
   bite(enemy) {
     enemy.hp -= 10;
   }
+}
+
+// when creating a debug function (one that shouldn't be
+// able to be called when we release this product) use
+// the following syntax
+function debug_playRiff(params) {
+  console.log(1 + 2);
+  console.log(params);
 }
 
 // general coding tips/rules
