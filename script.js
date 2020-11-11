@@ -12,11 +12,14 @@ let instruments;
 
 function setup(){
     mainCanvas = document.getElementById("main-canvas");
+    mainCanvas.width = window.innerWidth;
+    mainCanvas.width = 900
+    mainCanvas.height = window.innerHeight;
+    mainCanvas.height = 600
     canvasContext = mainCanvas.getContext("2d");
     canvasContext.beginPath();
-    canvasContext.rect(20,20,150,100);
+    canvasContext.rect(20,20,800,500);
     canvasContext.stroke();
-
     instruments = new Instruments();
 }
 
@@ -30,8 +33,11 @@ function draw() {
     // Draw the state of the world
     ticker.draw();
 }
-  
+
 function debug_PlayRiff(){
+    
+    // remove for later
+
     setTimeout(()=>{instruments.playInstrument('kick')}, 0);
     setTimeout(()=>{instruments.playInstrument('hihat')}, 200);
     setTimeout(()=>{instruments.playInstrument('snare')}, 400);
