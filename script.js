@@ -32,9 +32,6 @@ function draw() {
 }
   
 function debug_PlayRiff(){
-    
-    // remove for later
-
     setTimeout(()=>{instruments.playInstrument('kick')}, 0);
     setTimeout(()=>{instruments.playInstrument('hihat')}, 200);
     setTimeout(()=>{instruments.playInstrument('snare')}, 400);
