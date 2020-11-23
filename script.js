@@ -13,9 +13,7 @@ let instruments;
 function setup(){
     mainCanvas = document.getElementById("main-canvas");
     mainCanvas.width = window.innerWidth;
-    mainCanvas.width = 900
     mainCanvas.height = window.innerHeight;
-    mainCanvas.height = 600
     canvasContext = mainCanvas.getContext("2d");
     canvasContext.beginPath();
     canvasContext.rect(20,20,800,500);

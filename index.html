@@ -21,15 +21,18 @@
         <script src="loop.js"></script>
     </head>
     <body>
+        <h1 id="main-title">Beat Maker</h1>
         <div id="buttons">
-            <button>
+            <button id="play-button">
                 Play
             </button>
-            <button>
-                Record
+            <button id="pause-button">
+                Pause
             </button>
         </div>
-        <canvas id="main-canvas"></canvas>
+        <div id="notes-container">
+            <canvas id="main-canvas"></canvas>
+        </div>
         <div id="debug">
             <h4>Debug Options</h4>
             <button onclick="debug_PlayRiff()">
