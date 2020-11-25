@@ -13,10 +13,12 @@ let instruments;
 function setup(){
     mainCanvas = document.getElementById("main-canvas");
     mainCanvas.width = window.innerWidth;
+    mainCanvas.width = 850
     mainCanvas.height = window.innerHeight;
     canvasContext = mainCanvas.getContext("2d");
     canvasContext.beginPath();
-    canvasContext.rect(20,20,800,500);
+    canvasContext.fillStyle= "grey"
+    canvasContext.fillRect(100,100,750,500);
     canvasContext.stroke();
     instruments = new Instruments();
 }
@@ -33,8 +35,8 @@ function draw() {
 }
 
 function debug_PlayRiff(){
-    
-    // remove for later
+
+    //remove later
 
     setTimeout(()=>{instruments.playInstrument('kick')}, 0);
     setTimeout(()=>{instruments.playInstrument('hihat')}, 200);
@@ -45,3 +47,18 @@ function debug_PlayRiff(){
     setTimeout(()=>{instruments.playInstrument('snare')}, 1200);
     setTimeout(()=>{instruments.playInstrument('hihat')}, 1400);
 }
+
+function play_kick(){
+
+    setTimeout(()=>{instruments.playInstrument('kick')}, 0);
+}
+
+function play_snare(){
+
+    setTimeout(()=>{instruments.playInstrument('snare')}, 0);
+    }
+
+function play_HiHat(){
+
+    setTimeout(()=>{instruments.playInstrument('hihat')}, 0);
+    }
