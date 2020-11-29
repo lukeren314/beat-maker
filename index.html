@@ -16,6 +16,7 @@
         <!-- include scripts -->
         <script src="sound.js"></script>
         <script src="instruments.js"></script>
+        <script src="instrumentLabels.js"></script>
         <script src="ticker.js"></script>
         <script src="script.js"></script>
         <script src="loop.js"></script>
@@ -26,12 +27,14 @@
             <button id="play-button">
                 Play
             </button>
-            <button id="pause-button">
-                Pause
-            </button>
         </div>
         <div id="notes-container">
-            <canvas id="main-canvas"></canvas>
+            <div id="center-content">
+                <span id="instrument-labels-container">
+                    <div id="instrument-labels"></div>
+                </span>
+                <canvas id="main-canvas"></canvas>
+            </div>
         </div>
         <div id="debug">
             <h4>Debug Options</h4>

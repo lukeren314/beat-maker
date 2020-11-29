@@ -6,6 +6,10 @@ class Instruments{
             'hihat': new Sound('hihat','hihat.wav'),
         }
     }
+    getInstruments()
+    {
+        return Object.keys(this.instruments);
+    }
     playInstrument(name){
         this.instruments[name].playSound();
     }

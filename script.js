@@ -21,6 +21,7 @@ function setup(){
     canvasContext.fillRect(100,100,750,500);
     canvasContext.stroke();
     instruments = new Instruments();
+    createInstrumentLabels(instruments.getInstruments());
 }
 
 function update(progress) {
