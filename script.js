@@ -8,7 +8,7 @@ let ticker = new Ticker();
 let mainCanvas;
 let canvasContext;
 let instruments;
-let mode = "inputting";
+
 
 function setup(){
     mainCanvas = document.getElementById("main-canvas");
